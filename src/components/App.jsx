@@ -65,7 +65,7 @@ export class App extends React.Component {
         
                 <Filter value={this.state.filter} onChangeFilter={this.changeFilter} />
 
-                <ContactList contacts={visibleFilterItems} newContact={this.addNewContact} onRemoveContact={this.removeContact } />
+                <ContactList contacts={visibleFilterItems} onRemoveContact={this.removeContact } />
         </>
         
     )}

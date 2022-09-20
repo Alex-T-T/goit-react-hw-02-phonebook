@@ -23,5 +23,9 @@ export class ContactList extends React.Component {
 
 ContactList.propTypes = {
     onRemoveContact: PropTypes.func.isRequired,
-    contacts: PropTypes.arrayOf(PropTypes.object.isRequired)
+    contacts: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        number: PropTypes.string.isRequired,
+    }))
 }
